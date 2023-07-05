@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #eee;
+  padding: 15px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: showModal ease-in 0.5s;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.content-item {
+  position: relative;
+  display: flex;
+  padding: 10px 0;
+}
+
+.action {
+  position: absolute;
+  right: 0;
+}
+
+.modal.close {
+  display: none;
+}
+
+input {
+  width: 100%;
+}
+
+.text-complete {
+  text-decoration: line-through;
+  color: #696767;
+}
+
+.text {
+  cursor: pointer;
+}
+
+option {
+  width: 100%;
+  display: block;
+}
